@@ -1,0 +1,135 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f6fa;
+  color: #333;
+}
+
+.app {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  color: #2f3640;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Container for main sections */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card style */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Headings inside cards */
+.card h2 {
+  color: #2f3640;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #40739e;
+}
+
+/* Form labels & inputs */
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 4px;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+  background-color: #f5f6fa;
+  color: #2f3640;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: 2px solid #40739e;
+}
+
+/* Button */
+button {
+  background-color: #40739e;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2f3640;
+}
+
+/* Highest bids list */
+.bids-list li {
+  margin-bottom: 8px;
+  padding: 6px;
+  border-bottom: 1px solid #dcdde1;
+  font-size: 14px;
+}
+
+/* Event log box */
+.log-box {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #dcdde1;
+}
+
+.log-box li {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+/* Links */
+a {
+  color: #40739e;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  input, button {
+    font-size: 16px;
+  }
+
+  .log-box {
+    max-height: 300px;
+  }
+}
